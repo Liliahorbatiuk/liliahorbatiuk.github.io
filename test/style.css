@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: rgb(225, 255, 255);
+}
+
+.title{
+    text-align: center;
+}
+
+.test{
+    width: 680px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.question{
+    width: 310px;
+    margin: 10px;
+    background-color: rgb(199, 246, 246);
+    border-radius: 5px;
+}
+.image{
+    padding: 10px;
+}
+
+img{
+    width: 290px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(4, 196, 255);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    margin: 10px auto;
+}
