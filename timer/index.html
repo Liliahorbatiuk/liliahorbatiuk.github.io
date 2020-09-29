@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="dateTime">
+        <div class="date"></div>
+        <div class="time"></div>
+    </div>
+    <div class="stopWatch">
+        <div class="clockface">
+            <div class="numbers">
+                <!-- <input name=stopwatch size=10 value="00:00:00.00">  -->
+            </div>
+            <div class="buttons">
+                <input type="button" value="START" id="startBtn">
+                <input type="button" value="LOOP" id="loopBtn">
+                <input type="button" value="STOP" id="stopBtn">
+                <input type="button" value="RESET" id="resetBtn">
+            </div>
+        </div>
+
+        <div class="scoreboard">
+            <textarea id="textarea" cols="30" rows="10" readonly></textarea>
+        </div>
+    </div>
+    <div class="timer">
+        <div class="minutes">
+            <input type="text" name="" id="min-inp" value="25" readonly>
+            <label for="min-inp">MINUTES</label>
+            <input type="button" value="-" id="less">
+            <input type="button" value="+" id="more">
+        </div>
+
+        <div class="timerScoreboard">
+            <div class="timerScore"></div>
+            <div class="timerBtns">
+                <input type="button" value="START" id="start">
+                <input type="button" value="STOP" id="stop">
+                <input type="button" value="RESET" id="reset">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+@import url(font/fonts.css);
+
+body{
+    background-color: rgb(4, 4, 22);
+    color: oldlace;
+    margin: 0;
+    padding: 0;
+    font-family: 'Digital';
+
+}
+
+.dateTime{
+    max-width: 100%;
+    min-height: 200px;
+    background-color:  rgb(7, 7, 37);
+    border: 1px solid  rgb(60, 121, 161);
+    text-align: center;
+    color: rgb(13, 151, 163);
+    margin-bottom: 25px;
+}
+
+.date{
+    margin: 50px 0 0;
+    font-size: 28px;
+}
+
+.time{
+    font-size: 70px
+}
+
+.stopWatch{
+    max-width: 100%;
+    min-height: 200px;
+    background-color:  rgb(7, 7, 37);
+    border: 1px solid  rgb(60, 121, 161);
+    color: rgb(13, 151, 163);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 25px;
+
+}
+
+.clockface{
+    width: 40%;
+    height: 120px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;  
+    font-size: 50px;
+}
+
+.buttons input[type="button"],
+.timerBtns input[type="button"] {
+    width: 50px;
+    height: 20px;
+    font-size: 10px;
+    border: 1px solid  rgb(14, 70, 107);
+    background-color:  rgb(7, 7, 37);
+    color: rgb(13, 151, 163);
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+textarea{
+    background-color:  rgb(7, 7, 37);
+    border: 1px solid  rgb(14, 70, 107);
+    resize: none;
+    color: rgb(13, 151, 163);
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+textarea:focus,
+.buttons input[type="button"]:focus,
+.timerBtns input[type="button"]:focus,
+.minutes input[type="text"]:focus{
+    outline: none;
+}
+
+.timer{
+    max-width: 100%;
+    min-height: 200px;
+    background-color:  rgb(7, 7, 37);
+    border: 1px solid  rgb(60, 121, 161);
+    color: rgb(13, 151, 163);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.minutes{
+    width: 75px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.minutes input[type="text"]{
+    width: 70px;
+    height: 50px;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(13, 151, 163);
+    background-color:  rgb(7, 7, 37);
+    border: none;
+    font-family: 'Digital';
+}
+
+.minutes input[type="button"]{
+    width: 30px;
+    height: 30px;
+    margin: 10px 0;
+    border: 1px solid  rgb(14, 70, 107);
+    background-color:  rgb(7, 7, 37);
+    color: rgb(13, 151, 163);
+    cursor: pointer;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.minutes input[type="button"]:focus{
+    outline: none;
+}
+
+
+.timerScoreboard{
+    width: 40%;
+    height: 120px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;  
+    font-size: 50px;
+    margin-right: 50px;
+}
