@@ -1,0 +1,173 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.bg-dark {
+    width: 100%;
+    background-color: #030303!important;
+}
+._container {
+    max-width: 1400px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+    @media (max-width: 375px) {
+        padding: 0;
+    }
+}
+
+.top-header {
+    background-color: #030303;
+    font-family: 'Montserrat';
+    a {
+        color: #ffffffc9;
+        text-decoration: none;
+    }
+    &__logo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a {
+            font-size: 30px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            outline: none;
+        }
+    }
+}
+
+.menu {
+    &__list {
+        margin: 0;
+        text-align: center;
+        li {
+            margin: 10px 0;
+            letter-spacing: 2px;
+        }
+        @media (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            li {
+                margin-left: 20px;
+                padding: 10px 0;
+            }
+        }
+    }
+    &__link {
+        font-size: 18px;
+        padding: 5px;
+        @media (min-width: 768px) {
+            transition: all .2s ease-out;
+            &:hover {
+                color: #fff;
+                border-radius: 5px;
+                background-color: #696868c4;
+            }
+        }
+    }
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    @media (max-width: 375px) {
+        padding: 0;
+        flex-flow: column-reverse nowrap;
+    }
+}
+
+.sidebar-news {
+    @media (min-width: 375px) {
+        width: 25%;
+        padding: 10px;
+    }
+}
+
+.informer {
+    width: 80%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    @media (max-width: 768px) {
+        width: 50%;
+        flex-flow: column-reverse nowrap;
+    }
+    @media (max-width: 375px) {
+        width: 100%;
+    }
+
+    .content {
+        padding: 0 10px;
+        @media (max-width: 768px) {
+            width: 100%;
+            h2 {
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .feeds {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 768px) {
+            flex-flow: column nowrap;
+            .card {
+                width: 16rem !important;
+                margin: 10px auto;
+            }
+        }
+        @media (max-width: 375px) {
+            .card {
+                width: 14rem !important;
+                margin: 10px auto;
+            }
+        }
+    }
+
+    aside {
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        @media (max-width: 768px) {
+            .d-flex {
+                display: none !important;
+            }
+        }
+    }
+    &__weather {
+        margin: 10px;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-end;
+        @media (max-width: 768px) {
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+        @media (max-width: 375px) {
+            flex-flow: column nowrap;
+            align-items: center;
+        }
+    }
+    &__currency {
+        margin: 10px 0;
+        @media (max-width: 375px) {
+            margin: 10px 0;
+        }
+
+    }
+    &__news {
+        .feed-container {
+            width: 375px;
+        }
+    }
+}
+
+
